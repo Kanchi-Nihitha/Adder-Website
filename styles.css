@@ -1,0 +1,344 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px; 
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+.gif-image {
+    width: 200px;
+    height: 200px;
+    margin: 20px 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image:url('signin.jpg'); /* Path to your uploaded image */
+    background-size:cover; /* Make sure the background covers the entire page */
+    background-position:center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-color: aliceblue;
+    display:flow-root;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Add semi-transparent white background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-block-end:10px;
+    cursor: pointer;
+    background-color: #5c4caf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #a04545;
+    transform: scale(1.03);
+}
+button:active {
+    background-color: #FF3300; /* Even darker shade on click */
+    transform: scale(1);  /* Restore size on click */
+}
+
+p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.gif-image {
+    width: 200px;
+    height: 200px;
+    margin: 20px 0;
+}
+/* Animated text at the top */
+.animated-text {
+    position: absolute;
+    top: 10px;   /* Adjust this value to place it at the top */
+    left: 0;  /* Starting point on the left side of the screen */
+    width: 100%; /* Ensure it spans the full width of the screen */
+    text-align: center;  /* Center the text horizontally within the container */
+    z-index: 1;
+    overflow: hidden; 
+}
+/* Animation using keyframes */
+@keyframes moveLikeTrain {
+    0% {
+        transform: translateX(-100%);  /* Start off-screen to the left */
+    }
+    100% {
+        transform: translateX(100%);   /* Move off-screen to the right */
+    }
+}
+
+.animated-text p {
+    font-size: 48px;  /* Adjust the size */
+    font-weight: bold;
+    color: #070707f4;   /* Adjust color */
+    animation: moveLikeTrain 10s linear infinite;  /* Slowed down to 10s for smoother motion */
+    transform: translateZ(0);  /* Prevents sub-pixel blurring by forcing the element onto the GPU */
+    will-change: transform;    /* Optimize for smoother transformations */
+    white-space: nowrap;       /* Prevents the text from wrapping */
+    -webkit-font-smoothing: antialiased;  /* Optimize font rendering */
+    -moz-osx-font-smoothing: grayscale;
+}
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative; /* For positioning background content */
+}
+
+/* Background Content Styles - Aligned to the left and vertically centered */
+.background-content {
+    position: absolute;
+    top: 0;
+    left: 0;  /* Align to the left */
+    width: 40%;  /* Take up 40% of the screen width, adjust if needed */
+    height: 100%;
+    padding-left: 20px;  /* Padding for some spacing from the edge */
+    z-index: -1;  /* Ensure it stays behind the sign-in container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Vertically center the content */
+    text-align: left;  /* Align text to the left */
+    color: rgb(0, 0, 0); /* Slight transparency */
+}
+
+.background-content h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.background-content p {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Sign In Container */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    z-index: 1; /* Ensure the sign-in container is above the background content */
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+button {
+    padding: 8px 0;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 80%;
+}
+/* Apply the animated GIF as a background for the body */
+body.amount-adder-background {
+    background-image: url('add.gif'); /* Background GIF */
+    background-size: cover;  /* Cover entire page */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat;  /* No repeat */
+    /* No animation keyframes here */
+}
+/* Fixed position for the Contact Us button */
+.contact-us-button {
+    position: fixed;
+    bottom: 20px;  /* Distance from the bottom of the page */
+    right: 20px;   /* Distance from the right of the page */
+    background-color: #FFC107;  /* Yellow color similar to the example */
+    color: black;
+    padding: 12px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Depth effect */
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1000; /* Ensure it's on top of all other elements */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-us-button:hover {
+    background-color: #FFA000; /* Darken on hover */
+    transform: scale(1.05);  /* Slightly enlarge on hover */
+}
+
+/* Style for the Amount Adder container without animation */
+#mainContent {
+    background-color: rgba(255, 255, 255, 0.8);  /* Keep semi-transparent container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    z-index: 1;  /* Keep it on top of the background */
+    margin: 20px auto;
+}
+
+/* Remove any animations on container or text inside */
+#mainContent h1, #mainContent input, #mainContent button, #mainContent p {
+    animation: none;  /* No animation */
+}
+/* General Mobile Styles */
+@media screen and (max-width: 600px) {
+
+    /* Make the container full width on mobile */
+    .container {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    /* Adjust input fields and buttons */
+    input, button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    /* Reduce button size */
+    button {
+        width: 100%;  /* Full width button on mobile */
+    }
+
+    /* Adjust heading font size */
+    h1 {
+        font-size: 24px;  /* Reduce heading size on mobile */
+    }
+
+    /* Adjust background content (if still using it) */
+    .background-content {
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Adjust the size of the animated background image */
+    body {
+        background-size: cover;  /* Ensure the background image covers the mobile screen */
+    }
+
+    /* Contact Us Button - Make it smaller on mobile */
+    .contact-us-button {
+        padding: 10px;
+        font-size: 14px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+.container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center;
+}
+.gif-image {
+    width: 100%; /* Responsive images: use the full width on mobile */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px;  /* Smaller font for mobile */
+    }
+
+    p {
+        font-size: 14px;  /* Adjust paragraph size */
+    }
+}
+.animated-text {
+    position: absolute; 
+    top: 20px;  /* Adjust top positioning */
+    left: 0;
+    width: 100%; 
+    text-align: center; 
+    z-index: 1;
+    font-size: 24px;  /* Adjust size if needed */
+    font-weight: bold;
+    color: #af4c4cd8;   /* Ensure text color is visible */
+    animation: moveLikeTrain 10s linear infinite;
+    white-space: nowrap;
+}
+
+.animated-text p {
+    font-size: 48px;  /* Adjust the size */
+    font-weight: bold;
+    color: #0a0a0a;   /* Adjust color */
+    animation: moveLikeTrain 10s linear infinite;  /* Slowed down to 10s for smoother motion */
+    transform: translateZ(0);  /* Prevents sub-pixel blurring by forcing the element onto the GPU */
+    will-change: transform;    /* Optimize for smoother transformations */
+    white-space: nowrap;       /* Prevents the text from wrapping */
+    -webkit-font-smoothing: antialiased;  /* Optimize font rendering */
+    -moz-osx-font-smoothing: grayscale;
+}
