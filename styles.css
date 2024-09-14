@@ -152,7 +152,7 @@ body {
     display: flex;
     flex-direction:column;
     justify-content:center;  /* Vertically center the content */
-    text-align: left;  /* Align text to the left */
+    text-align:center;  /* Align text to the left */
     color: rgb(0, 0, 0); /* Slight transparency */
 }
 
