@@ -151,8 +151,8 @@ body {
     z-index: -1;  /* Ensure it stays behind the sign-in container */
     display: flex;
     flex-direction:column;
-    justify-content:top;  /* Vertically center the content */
-    text-align:left;  /* Align text to the left */
+    justify-content:tops;  /* Vertically center the content */
+    text-align:top;  /* Align text to the left */
     color: rgb(0, 0, 0); /* Slight transparency */
 }
 
