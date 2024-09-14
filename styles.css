@@ -166,6 +166,23 @@ body {
     font-size: 24px;
     margin-bottom: 10px;
 }
+/* Add a media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .background-content {
+        width: 100%;  /* Make it take up the full width on mobile */
+        padding-left: 10px;  /* Adjust padding for smaller screens */
+        text-align: center;  /* Center the text on small screens */
+    }
+
+    .background-content h2 {
+        font-size: 28px;  /* Reduce font size for smaller screens */
+    }
+
+    .background-content p {
+        font-size: 18px;  /* Adjust paragraph size for better fit */
+    }
+}
+Key Chang
 
 /* Sign In Container */
 .container {
