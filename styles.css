@@ -342,3 +342,46 @@ body.amount-adder-background {
     -webkit-font-smoothing: antialiased;  /* Optimize font rendering */
     -moz-osx-font-smoothing: grayscale;
 }
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+    .welcome-note {
+        font-size: 1.2rem; /* Make text smaller for mobile */
+        margin: 10px;      /* Adjust margin for smaller screens */
+    }
+
+    .animated-text {
+        display: block; /* Ensure it's visible */
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .amount-adder {
+        width: 90%;   /* Make sure the input box takes up most of the width */
+    }
+}
+
+/* For tablets and larger screens */
+@media only screen and (min-width: 601px) {
+    .welcome-note {
+        font-size: 2rem;
+        margin: 20px;
+    }
+
+    .animated-text {
+        font-size: 1.5rem;
+    }
+
+    .amount-adder {
+        width: 50%;
+    }
+}
+.welcome-note {
+    position: relative;
+    top: 10px; /* Adjust the top margin */
+    z-index: 1; /* Make sure it stays on top */
+}
+.animated-text {
+    position: absolute; /* Ensure it stays on top */
+    top: 50px;          /* Adjust position based on your layout */
+    z-index: 2;         /* Make sure it's visible over other elements */
+    font-size: 1.2rem;  /* Adjust size */
+}
