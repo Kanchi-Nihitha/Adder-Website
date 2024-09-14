@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In and Amount Adder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="sign-in-page"> <!-- Initially set class to sign-in-page -->
+
+    <div class="background-content">
+        <h2>Welcome!!</h2>
+        <p>Here you can add amounts efficiently.</p>
+        <p>Sign in to explore...</p>
+    </div>
+
+    <!-- Sign In Section -->
+    <div id="signInContainer" class="container">
+        <h1>Sign In</h1>
+        <input type="email" id="emailInput" placeholder="Enter your Gmail" 
+        pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="Please enter a valid Gmail address (e.g. example@gmail.com)" required
+        onkeypress="checkSignInEnter(event)" />
+
+        <button onclick="signIn()">Sign In</button>
+    </div>
+
+    <!-- Amount Adder Section -->
+    <div id="mainContent" class="container" style="display: none;">
+        <!-- Animated Text Section -->
+        <div id="animatedText" class="animated-text" style="display:block;">
+            <p>Sum Up of Amounts Transffered To CHENCHU KRISHNAIAH !</p>
+        </div>
+        <h1>Amount Adder</h1>
+        <input type="number" id="amountInput" placeholder="Enter an amount" onkeypress="checkEnter(event)" />
+        <button onclick="addAmount()">Add</button>
+        <p>Total Amount: <span id="totalAmount">0</span></p>
+
+        <!-- Contact Us Button -->
+        <a href="contact.html" class="contact-us-button">Contact Us</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
